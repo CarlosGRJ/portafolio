@@ -29,7 +29,7 @@ HEADER
 
 header{
 	position: fixed;
-	z-index: 2;
+	z-index: 10;
 	width:100%;
 	top:0;
 	left:0;
@@ -340,7 +340,7 @@ TECNOLOGÍAS
 	padding: 14px;
     border-radius: 11px;
     font-size: 31px;
-    border: 1px solid #444;
+    border: 1px solid #ccc;
 }
 
 .contacto .fa-envelope {
@@ -362,6 +362,16 @@ TECNOLOGÍAS
 	background: #E37222;
 	color: white;
 }
+
+.fa-file-pdf {
+	background: #E71A23;
+	color: white;
+	padding: 14px;
+    border-radius: 11px;
+    font-size: 31px;
+}
+
+
 
 
 /*=============================================
