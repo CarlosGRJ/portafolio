@@ -1,0 +1,520 @@
+/*=============================================
+GLOBAL
+=============================================*/
+
+*{
+	font-family: 'Open Sans';
+}
+
+a, h1, h2, h3, h4, h5, h6, button, select, option, .input-group, input, .input-group-text, textarea, .nav-link{
+	font-family: 'Lato', sans-serif;
+}
+
+ul, ol{
+	list-style: none;
+}
+
+a:visited, a:link, a:focus, a:hover, a:active{
+	list-style: none;
+	text-decoration: none;
+}
+
+/*=============================================
+HEADER
+=============================================*/
+
+/* body {
+	overflow-x: hidden;
+} */
+
+header{
+	position: fixed;
+	z-index: 2;
+	width:100%;
+	top:0;
+	left:0;
+}
+
+.logotipo a h1 {
+	position: absolute;
+	top: -3px;
+	left: -23px;
+	color: white;
+	font-size: 25px;
+	font-weight: 800;
+}
+
+.botonera li{
+	cursor:pointer;
+}
+
+.botonera li:hover{
+	border-bottom:3px solid white;
+}
+
+.botonera li a {
+    font-size: 14px;
+}
+
+.botonera li i {
+	font-size: 20px;
+	color: white;
+}
+
+#menuH {
+	margin-top: 7px;
+	padding-left: 62px;
+}
+
+#menuH:hover {
+	border: none;
+}
+
+/*===========================
+ BOTÓN MENÚ 
+===========================*/
+
+.menu {
+	display: none;
+
+}
+
+nav.menu {
+    position: fixed;
+	z-index: 10;
+	width: 269px;
+	height: 100%;
+    top: 0px;
+	right: 0;
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.btnClose {
+    position: absolute;
+    top: 100px;
+    right: 25%;
+	color: white;
+	cursor: pointer;
+}
+
+nav.menu ul {
+	position: relative;
+    top: 43%;
+}
+
+nav.menu ul li {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+nav.menu li > .nav-link {
+    transition: .5s all;
+}
+
+nav.menu li:hover > .nav-link {
+    background: #197DB1;
+    transition: .5s all;
+}
+
+/*=============================================
+DISEÑO HERO 
+=============================================*/
+
+.hero{
+	position:relative;
+	width:100%;
+	height:100vh;
+	overflow:hidden;
+}
+
+.hero img {
+	width: 100%;
+	height: 100%;
+}
+
+.filtro{
+	position:absolute;
+	width:100%;
+	height:inherit;
+	top:0;
+	left:0;
+	background: url(../img/filtro.png);
+	background-repeat: repeat;
+}
+
+.centro{
+	transform: translate(0, -183%);
+}
+
+.textoHero {
+	font-size:48px;
+}
+
+.redes {
+	padding-top: 26px;
+}
+
+.hero .verMas {
+    position: absolute;
+    width: 60px;
+    line-height: 60px;
+    bottom: 5%;
+    left: 50%;
+    font-size: 30px;
+    transform: translate(-50%, 0%);
+    cursor: pointer;
+}
+
+
+
+
+/*=============================================
+SOBRE MÍ 
+=============================================*/
+
+.sobreMi {
+	padding-bottom: 20px;
+}
+
+.sobreMi p {
+	font-size: large;
+}
+
+.yo img {
+    padding-top: 42px;
+    width: 49%;
+    height: 95%;
+}
+
+/*=============================================
+HABILIDADES
+=============================================*/
+
+.hexagon {
+	transform: rotate(90deg);
+	background: #ccc;
+	height: 4em;
+	margin: 3.4641em 0;
+	position: relative;
+	width: 6.9282em;
+	position: relative;
+	right: -27%;
+	border: .2px solid #ccc;
+  }
+
+  .hexagon::before {
+	border-right:3.4641em solid transparent;
+	border-bottom:2em solid #ccc;
+	border-left:3.4641em solid transparent;
+	content: '';
+	height:0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: -2em;
+	width: 0;
+  }
+  .hexagon::after {
+	border-top:2em solid #ccc;
+	border-right:3.4641em solid transparent;
+	border-left:3.4641em solid transparent;
+	bottom:-2em;
+	content: '';
+	height:0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	width:0;
+  }
+
+  .hexagon i {
+	  z-index: 1;
+  }
+
+  .react {
+	position: absolute;
+	font-size: 70px;
+	top: -4px;
+    left: 18px;
+  }
+
+  .nave {
+	transform: rotate(241deg);
+    position: absolute;
+    top: 7px;
+    left: 22px;
+	font-size: 50px;
+  }
+
+
+  .responsive {
+	transform: rotate(-90deg);
+    padding: 0;
+    width: 103px;
+  }
+
+  .equipo {
+	transform: rotate(-90deg);
+	position: absolute;
+	top: 3px;
+    left: 18px;
+    font-size: 56px;
+  }
+
+/*=============================================
+TECNOLOGÍAS
+=============================================*/
+
+
+/*===========================
+ SCROLL UP 
+===========================*/
+
+#scrollUp {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: url(../img/flecha.jpg);
+    border-radius: 100%;
+    opacity: .8;
+}
+
+/*=============================================
+ PROYECTOS
+=============================================*/
+
+.proyectos .container .row a {
+	color: rgb(48, 45, 45);
+}
+
+.proyectos figure{
+	position: relative;
+	overflow:hidden;
+	cursor:pointer;	
+}
+
+.proyectos figure img {
+	transform: scale(1, 1);
+	transition: .5s all;	
+	width: 100%;
+	height: 230px;
+	border-radius: 10px;
+	border: 1px solid #444;
+}
+
+.proyectos figure img:hover {
+	transform: scale(1.1, 1.1);
+	transition: .5s all;
+	filter: blur(4px) grayscale(100%);
+}
+
+.proyectos figure h2 {
+	position: absolute;
+    top: 66%;
+    left: 32%;
+    z-index: 2;
+	color: white;
+	background: #e37222;
+	border: 1px solid #373737;
+	border-radius: 8px;
+	padding: 8px;
+	font-size: 15px;
+	transform: scale(1, 1);
+	transition: .5s all;
+}
+
+.proyectos figure h2:hover {
+	transform: scale(1.2, 1.2);
+}
+
+/*=============================================
+ CONTACTO
+=============================================*/
+
+.contacto .container ul li a {
+	color: #444;
+}
+
+.contacto .container ul li a i {
+	padding: 14px;
+    border-radius: 11px;
+    font-size: 31px;
+    border: 1px solid #444;
+}
+
+.contacto .fa-envelope {
+	background: #167BCD;
+	color: white;;
+}
+
+.contacto .fa-google {
+	background: #D32E2A;
+	color: white;
+}
+
+.contacto .fa-linkedin {
+	background: #0077B5;
+	color: white;
+}
+
+.contacto .fa-github {
+	background: #E37222;
+	color: white;
+}
+
+
+/*=============================================
+TABLET HORIZONTAL (LG revisamos en 1024px)
+=============================================*/
+
+@media (max-width:1199px) and (min-width:992px){
+
+	.logotipo a {
+		padding: 0;
+		left: -5px;
+	}
+
+	.centro{
+		transform: translate(0, -243%);
+	}
+
+	.textoHero {
+		font-size:40px;
+	}
+
+	.botonera li a {
+		font-size: 14px;
+	}
+	
+	.botonera li i {
+		font-size: 20px;
+		color: white;
+	}
+
+	#menuH {
+		margin-top: 7px;
+		margin-right: 9px;
+		padding-left: 44px;
+		padding-right: 20px;
+	}
+
+	.yo {
+		position: relative;
+		top: 73px;
+		left: 0px;
+	}
+
+	.yo img {
+		padding-top: 42px;
+		width: 49%;
+		height: 78%;
+	}
+
+}
+
+/*=============================================
+TABLET VERTICAL (MD revisamos en 768px)
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px){
+
+	.logoMovil {
+		font-size: 23px;
+	}
+
+	.centro {
+		transform: translate(0, -321%);
+	}
+
+	.textoHero {
+		font-size:40px;
+	}
+
+	.yo {
+		position: relative;
+		top: 73px;
+		left: 0px;
+	}
+
+}
+
+/*=============================================
+MÓVIL HORIZONTAL (SM revisamos en 576px)
+=============================================*/
+
+@media (max-width:767px) and (min-width:576px){
+
+	nav.menu ul {
+		position: relative;
+		top: 15%;
+	}
+
+	.btnClose {
+		top: 11px;
+		right: 14%;
+	}
+
+	nav.menu ul li {
+		padding-top: 4px;
+		padding-bottom: 7px;
+	}
+
+	.centro {
+		transform: translate(0, -148%);
+	}
+
+	.textoHero {
+		font-size:25px;
+	}
+
+	.redes {
+		padding-top: 12px;
+	}
+
+	.redes li a i {
+		font-size: 16px;
+	}
+
+	.hero .verMas {
+		width: 35px;
+		line-height: 35px;
+		font-size: 20px;
+	}
+
+}
+
+/*=============================================
+MOVIL VERTICAL (revisamos en 320px)
+=============================================*/
+
+@media (max-width:575px){
+
+	nav.menu {
+		width: 100%;
+	}
+
+	nav.menu ul {
+		position: relative;
+		top: 15%;
+	}
+
+	.btnClose {
+		top: 11px;
+		right: 14%;
+	}
+
+	nav.menu ul li {
+		padding-top: 4px;
+		padding-bottom: 7px;
+	}
+
+	.centro {
+		transform: translate(0, -234%);
+	}
+
+	.textoHero {
+		font-size:20px;
+	}
+
+}

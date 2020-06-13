@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Rojas</title>
+
+    <link rel="icon" href="img/carlosLogo.jpg">
+
+    <!--=====================================
+	VÍNCULOS CSS
+    ======================================-->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/236d81e030.js" crossorigin="anonymous"></script>
+
+    <!-- Fuentes Google Fonts --
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Pano -->
+    <link rel="stylesheet" href="css/plugins/jquery.pano.css">
+
+    <!-- Hoja de Estilo Personalizada -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--=====================================
+	VÍNCULOS JAVASCRIPT
+    ======================================-->
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- https://easings.net/es# -->
+    <script src="js/plugins/jquery.easing.js"></script>
+
+    <!-- https://markgoodyear.com/labs/scrollup/ -->
+    <script src="js/plugins/scrollUP.js"></script>
+
+    <!-- Pano -->
+    <!-- https://www.jqueryscript.net/other/360-Degree-Panoramic-Image-Viewer-with-jQuery-Pano.html -->
+    <script src="js/plugins/jquery.pano.js"></script>
+
+    <!-- https://markgoodyear.com/labs/scrollup/ -->
+    <script src="js/plugins/scrollUP.js"></script>
+
+</head>
+
+<body>
+
+    <!--=====================================
+	 HEADER
+    ======================================-->
+
+    <header class="py-3">
+
+        <div class="container-fluid">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <!-- LOGO -->
+
+                    <div class="col-lg-2 d-none d-lg-block mt-2 logotipo">
+
+                        <a href="index.html">
+                            <h1>Carlos Rojas</h1>
+                        </a>
+
+                    </div>
+
+                    <!-- BOTONERA -->
+
+                    <div class="col-lg-10 d-none d-lg-block p-0 pt-2 botonera">
+
+                        <ul class="nav nav justify-content-center justify-content-around">
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#inicio">INICIO</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#sobreMi">SOBRE MÍ</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#habilidades">HABILIDADES</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#proyectos">PROYECTOS</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#contacto">CONTACTO</a>
+                            </li>
+
+                            <li class="nav-item" id="menuH">
+                                <i class="fas fa-bars lead"></i>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="d-lg-none d-flex">
+                    <div><a href="index.html" class="p-2 pl-sm-0 text-white logoMovil">Carlos Rojas</a></div>
+                    <div class="p-2 ml-auto"><i class="fas fa-bars lead text-white"></i></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!--=====================================
+	 BOTÓN MENÚ
+    ======================================-->
+
+    <nav class="menu container">
+
+        <p class="btnClose p-3 lead">X</p>
+
+        <ul class="nav flex-column text-center py-2">
+
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#inicio">INICIO</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#sobreMi">SOBRE MÍ</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#habilidades">HABILIDADES</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#proyectos">PROYECTOS</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#contacto">CONTACTO</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!--=====================================
+	 DISEÑO HERO - CINEMAGRAPH
+    ======================================-->
+
+    <div class="container-fluid hero p-0" id="inicio">
+
+        <img src="img/fondo.jpg" alt="">
+
+
+        <div class="filtro"></div>
+
+
+        <div class="centro">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-12">
+                        <div class="text-center">
+                            <h1 class="text-white textoHero">Hola, soy Carlos Rojas. <br>
+                                Soy desarrollador full-stack</h1>
+
+                                <p class="text-white lead pt-2">carlosgrj@outlook.com</p>
+                            
+                                <ul class="d-flex justify-content-center redes mr-5">
+
+                                    <li>
+                                        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin lead text-white mx-4"></i></a>
+                                    </li>
+            
+                                    <li>
+                                        <a href="#" target="_blank"><i class="fab fa-github lead text-white mx-4"></i></a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" target="_blank"><i class="fab fa-facebook-f lead text-white mx-4"></i></a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" target="_blank"><i class="fab fa-google lead text-white mx-4"></i></a>
+                                    </li>
+
+                                </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="verMas text-center bg-white rounded-circle" vinculo="#sobreMi">
+
+            <i class="fas fa-chevron-down"></i>
+
+        </div>
+
+    </div>
+
+
+
+    <!--=====================================
+      SOBRE MÍ
+    ======================================-->
+
+    <div class="container-fluid sobreMi" id="sobreMi">
+
+        <div class="container my-3">
+
+            <div class="row">
+
+                <div class="col-lg-5 col-md-12 pt-3 mt-5">
+
+                    <h1 class="pb-4 mb-3">¿Quién Soy?</h1>
+
+                    <p>Soy desarrollador full stack con sede en CDMX egresado de ingeniería mecánica en la Universidad
+                        Tecnológica de México. <br>
+                        Como desarrollador, mi objetivo es convertirme en arquitecto de software. Me tomo en serio la
+                        escritura de código limpio y siempre estoy buscando una oportunidad para mejorar esta habilidad
+                        existente. Además, me concentro en crear aplicaciones que sean visualmente atractivas. <br>
+                        Como humano, me apasiona la programación y disfruto aprendiendo cosas nuevas, aprovecho eso para
+                        ampliar mi conjunto de habilidades.</p>
+
+                </div>
+
+                <div class="col-lg-7 col-md-12 pt-3 mt-5 yo text-center">
+
+                    <img src="img/pic08.jpg" alt="yo">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr class="mt-5 pt-5">
+
+    <!--=====================================
+      HABILIDADES
+    ======================================-->
+
+    <div class="container-fluid habilidades mb-5" id="habilidades">
+
+        <div class="container">
+
+            <div class="row d-flex">
+
+                <div class="col-lg-12 text-center">
+
+                    <h2 class="p-3 mb-5">Habilidades</h2>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <div class="hexagon">
+                        <i><img class="responsive" src="img/responsive.png" alt="responsive"></i>
+                    </div>
+
+                    <h3 class="text-center p-2">Responsive</h3>
+                    <p class="text-center pt-3">Mis trabajos funcionarán en cualquier dispositivo, grande o pequeño.</p>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <div class="hexagon">
+                        <i class="fas fa-space-shuttle w-20 nave"></i>
+                    </div>
+
+                    <h3 class="text-center p-2">Dinámico</h3>
+
+                    <p class="text-center pt-3">Me gusta darle vida a las aplicaciones web, las hace más divertidas.</p>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <div class="hexagon">
+                        <i class="fab fa-react react"></i>
+                    </div>
+
+                    <h3 class="text-center p-2">Aprender</h3>
+
+                    <p class="text-center pt-3">Me encanta aprender cosas nuevas y me mantengo actualizado.</p>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <div class="hexagon">
+                        <i class="fas fa-users equipo"></i>
+                    </div>
+
+                    <h3 class="text-center p-2">Equipo</h3>
+
+                    <p class="text-center pt-3">Me gusta el trabajo en equipo, llegamos más lejos.</p>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--=====================================
+      TECNOLOGÍAS
+    ======================================-->
+
+    <div class="container-fluid tecnologias pt-5" id="tecnologias">
+
+        <div class="container">
+
+            <div class="row mb-3">
+
+                <div class="col-lg-12 text-center pt-5 mb-5">
+                    
+                    <h2>Font-end</h2>
+                    <hr>
+
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="text-center primera">
+                        <i><img src="img/htmlLogo.png" class="HTML" alt="Bootstrap logo" width="20%"></i>
+                        <h3 class="pt-3">HTML</h3>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="text-center primera">
+                        <i><img src="img/cssLogo.png" class="HTML" alt="Bootstrap logo" width="20%"></i>
+                        <h3 class="pt-3">CSS</h3>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="text-center primera">
+                        <i><img src="img/Bootstrap-Logo.png" class="BootLogo" alt="Bootstrap logo" width="20%"></i>
+                        <h3 class="pt-3">Bootstrap</h3>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="text-center primera">
+                        <i><img src="img/grid.png" class="GridLogo" alt="Grid Flexbox logo" width="22%"></i>
+                        <h3 class="pt-3">Grid y Flexbox</h3>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 mt-5">
+                    <div class="text-center primera">
+                        <i><img src="img/jQuery-logo.png" class="" alt="jquery logo" width="28%"></i>
+                        <h3 class="pt-3">jQuery</h3>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 mt-5">
+                    <div class="text-center primera">
+                        <i><img src="img/angularLogo.png" class="GridLogo" alt="Grid Flexbox logo" width="30%"></i>
+                        <h3 class="pt-3">Angular</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mb-3">
+
+                <div class="col-lg-12 text-center pt-5 mb-5">
+                
+                    <h2>Backend</h2>
+                    <hr>
+    
+                </div>
+    
+                <div class="col-lg-3">
+                    <div class="text-center primera">
+                        <i><img src="img/nodejs.png" class="NodeJS" alt="nodejs logo" width="50%"></i>
+                        <h3 class="pt-3">NodeJS</h3>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="text-center primera">
+                        <i><img src="img/mongodblogo.png" class="mongo" alt="mongodb logo" width="30%"></i>
+                        <h3 class="pt-3">MongoDB</h3>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="text-center primera">
+                        <i><img src="img/phplogo.png" class="mongo" alt="mongodb logo" width="54%"></i>
+                        <h3 class="pt-3">PHP</h3>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="text-center primera">
+                        <i><img src="img/laravel-logo.png" class="mongo" alt="mongodb logo" width="40%"></i>
+                        <h3 class="pt-3">Laravel</h3>
+                    </div>
+                </div>
+    
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!--=====================================
+      PROYECTOS
+    ======================================-->
+
+    <div class="container-fluid proyectos pt-5" id="proyectos">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-12 text-center">
+
+                    <h2 class="p-3 mb-5">Proyectos</h2>
+
+                </div>
+
+                <div class="col-lg-4">
+                    <a href="https://carlosgrj.github.io/hotel-reservas/index.html" target="_blank">
+                        <figure>
+                            <h2>Github Pages <i class="fab fa-github"></i></h2>
+                            <img class="proyectoImagen" src="img/hotel-portobello.png" alt="hotel portobello">
+                        </figure>
+                    </a>
+                    <h5 class="text-center p-3">Hotel Portobello</h5>
+                    <p class="text-center">HTML, CSS, Bootstrap, JavaScript, jQuery.</p>
+                </div>
+
+                <div class="col-lg-4">
+                    <a href="https://carlosgrj.github.io/blog-viajero/index.html" target="_blank">
+                        <figure>
+                            <h2>Github Pages <i class="fab fa-github"></i></h2>
+                            <img class="proyectoImagen-sm" src="img/blog-viajero.png" alt="Blog viajero">
+                        </figure>
+                    </a>
+                    <h5 class="text-center p-3">Blog viajero</h5>
+                    <p class="text-center">HTML, CSS, Bootstrap, JavaScript, jQuery.</p>
+                </div>
+
+                <div class="col-lg-4">
+                    <a href="https://carlosgrj.github.io/ventas-suscripcion/index.html" target="_blank">
+                        <figure>
+                            <h2>Github Pages <i class="fab fa-github"></i></h2>
+                            <img class="proyectoImagen-sm" src="img/ventas-sus.png" alt="Cursos online">
+                        </figure>
+                        
+                    </a>
+                    <h5 class="text-center p-3">Cursos Online</h5>
+                    <p class="text-center">HTML, CSS, Bootstrap, JavaScript, jQuery.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!--=====================================
+      Contacto
+    ======================================-->
+
+    <div class="container-fluid contacto mt-5" id="contacto">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    
+                    <h3>Puedes encontrarme en: </h3>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <ul>
+                        <li><a href=""><i class="fas fa-envelope"></i>  OUTLOOK</a></li>
+                        <li><a href=""><i class="fab fa-google mt-3"></i>  GMAIL</a></li>
+                        <li><a href=""><i class="fab fa-linkedin mt-3"></i>  LINKEDIN</a></li>
+                        <li><a href=""><i class="fab fa-github mt-3"></i>  GITHUB</a></li>
+                        
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--=====================================
+      FOOTER
+    ======================================-->
+
+    <footer class="container-fluid footer bg-dark mt-5">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="text-white text-center pt-3">&copy; 2020 Carlos Rojas. Todos los derechos reservados.</p>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
