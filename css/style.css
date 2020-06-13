@@ -332,14 +332,30 @@ TECNOLOGÍAS
  CONTACTO
 =============================================*/
 
+.contacto {
+	background: #f1f7ed;
+	padding: 40px;
+}
+
+.pdf {
+	margin-left: 17%;
+	position: relative;
+	top: 25px;
+}
+
+.verCv {
+	position: relative;
+	top: 25px;
+}
+
 .contacto .container ul li a {
 	color: #444;
 }
 
 .contacto .container ul li a i {
-	padding: 14px;
+	padding: 7px;
     border-radius: 11px;
-    font-size: 31px;
+    font-size: 20px;
     border: 1px solid #ccc;
 }
 
