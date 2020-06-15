@@ -10,7 +10,7 @@ $(window).scroll(function () {
 
     if (posY > 55) {
 
-        $("header").css({ "background": "#828282", "transition": ".5s all" });
+        $("header").css({ "background": "#343A40", "transition": ".5s all" });
 
     } else {
 

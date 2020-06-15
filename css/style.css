@@ -182,7 +182,7 @@ SOBRE MÍ
 
 .yo img {
     padding-top: 42px;
-    width: 49%;
+    width: 40%;
     height: 95%;
 }
 
@@ -432,9 +432,9 @@ TABLET HORIZONTAL (LG revisamos en 1024px)
 	}
 
 	.yo img {
-		padding-top: 42px;
+		padding-top: 0px;
 		width: 49%;
-		height: 78%;
+		height: 84%;
 	}
 
 }
@@ -459,8 +459,30 @@ TABLET VERTICAL (MD revisamos en 768px)
 
 	.yo {
 		position: relative;
-		top: 73px;
+		top: 18px;
 		left: 0px;
+	}
+
+	.yo img {
+		padding-top: 0px;
+		width: 40%;
+		height: 105%;
+	}
+
+	.hexagon {
+		right: -42%;
+	}
+
+	.proyectos figure img {
+		width: 100%;
+		height: 328px;
+	}
+
+	.proyectos figure h2 {
+		top: 64%;
+		left: 37%;
+		padding: 16px;
+		font-size: 21px;
 	}
 
 }
@@ -508,6 +530,18 @@ MÓVIL HORIZONTAL (SM revisamos en 576px)
 		font-size: 20px;
 	}
 
+	.hexagon {
+		right: -39%;
+	}
+
+	.habilidades .container div p {
+		font-size: 12px;
+	}
+
+	.proyectos figure h2 {
+		left: 37%;
+	}
+
 }
 
 /*=============================================
@@ -541,6 +575,33 @@ MOVIL VERTICAL (revisamos en 320px)
 
 	.textoHero {
 		font-size:20px;
+	}
+
+	.sobreMi .container .row div h1 {
+		text-align: center;
+	}
+
+	.yo img {
+		width: 60%;
+	}
+
+	.sobreMi p {
+		text-align: center;
+	}
+
+	.hexagon {
+		right: -33%;
+	}
+
+	.proyectos figure h2 {
+		top: 62%;
+		left: 26%;
+		padding: 13px;
+		font-size: 14px;
+	}
+
+	.redesContacto {
+		margin-top: 52px;
 	}
 
 }
